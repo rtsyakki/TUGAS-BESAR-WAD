@@ -710,5 +710,85 @@
     "rating": "PG-13",
     "plot": "Marvel's first family of superheroes returns to the big screen.",
     "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rating": "PG-13",
+    "plot": "A thief who enters the dreams of others to steal secrets is given a chance to have his criminal history erased.",
+    "special": ["Film dengan plot waktu", "IMDb Top 250 Movies"]
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genres": ["Action", "Adventure", "Drama"],
+    "rating": "PG-13",
+    "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "special": ["Film berdasarkan buku", "Film pemenang Oscar"]
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genres": ["Action", "Crime", "Drama"],
+    "rating": "PG-13",
+    "plot": "Batman faces the Joker, a criminal mastermind who seeks to create chaos in Gotham City.",
+    "special": ["Film superhero", "IMDb Top 250 Movies"]
+  },
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rating": "PG-13",
+    "plot": "A paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+    "special": ["Film luar angkasa", "Film dengan efek visual terbaik"]
+  },
+  {
+    "title": "Frozen",
+    "year": 2013,
+    "genres": ["Animation", "Adventure", "Comedy"],
+    "rating": "PG",
+    "plot": "When their kingdom is trapped in eternal winter, two sisters must work together to break the curse and save their home.",
+    "special": ["Film animasi", "Film keluarga"]
+  },
+  {
+    "title": "Black Panther",
+    "year": 2018,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rating": "PG-13",
+    "plot": "T'Challa returns home to the African nation of Wakanda to take his rightful place as king, only to face a new adversary.",
+    "special": ["Film superhero", "Film berlatar Afrika"]
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genres": ["Adventure", "Drama", "Sci-Fi"],
+    "rating": "PG-13",
+    "plot": "A group of astronauts travels through a wormhole in space to ensure humanity's survival on a distant planet.",
+    "special": ["Film luar angkasa", "IMDb Top 250 Movies"]
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rating": "R",
+    "plot": "A failed comedian is driven insane and becomes the criminal mastermind known as the Joker.",
+    "special": ["Film berdasarkan karakter komik"]
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "rating": "PG-13",
+    "plot": "Peter Parker seeks help from Doctor Strange to erase his secret identity but inadvertently opens the multiverse.",
+    "special": ["Film dengan prekuel atau sekuel"]
+  },
+  {
+    "title": "Dune",
+    "year": 2021,
+    "genres": ["Action", "Adventure", "Drama"],
+    "rating": "PG-13",
+    "plot": "Paul Atreides leads a noble family to the desert planet Arrakis, where they must fight for survival against treacherous forces.",
+    "special": ["Film luar angkasa", "Film berdasarkan buku"]
   }
 ]
