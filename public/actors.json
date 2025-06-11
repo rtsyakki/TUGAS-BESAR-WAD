@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Dwayne Johnson",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Dwayne_Johnson_2014.jpg",
+    "popularity": 98.5
+  },
+  {
+    "name": "Leonardo DiCaprio",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Leonardo_DiCaprio_66ème_Festival_de_Venise_%28Mostra%29.jpg",
+    "popularity": 95.2
+  },
+  {
+    "name": "Tom Holland",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Tom_Holland_by_Gage_Skidmore_3.jpg",
+    "popularity": 93.6
+  },
+  {
+    "name": "Zendaya",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Zendaya_by_Gage_Skidmore_2.jpg",
+    "popularity": 92.4
+  },
+  {
+    "name": "Chris Hemsworth",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Chris_Hemsworth_by_Gage_Skidmore_2.jpg",
+    "popularity": 91.8
+  },
+  {
+    "name": "Scarlett Johansson",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Scarlett_Johansson_in_Kuwait_01b-tweaked.jpg",
+    "popularity": 91.3
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg",
+    "popularity": 90.9
+  },
+  {
+    "name": "Timothée Chalamet",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Timothée_Chalamet_2019.jpg",
+    "popularity": 89.7
+  },
+  {
+    "name": "Emma Stone",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Emma_Stone_at_the_39th_Mill_Valley_Film_Festival.jpg",
+    "popularity": 88.6
+  },
+  {
+    "name": "Florence Pugh",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Florence_Pugh_by_Gage_Skidmore_2.jpg",
+    "popularity": 87.9
+  }
+]

@@ -6,5 +6,8 @@
     <div class="text-center my-5">
         <a href="{{ route('movie-picker.start') }}" class="btn btn-lg btn-primary">Start Now</a>
     </div>
+    <div class="text-center my-5">
+        <a href="{{ route('actors.top') }}" class="btn btn-lg btn-success">Top Actors</a>
+    </div>
 </div>
 @endsection
