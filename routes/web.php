@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GenreController;
 
 Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard/filter', [App\Http\Controllers\DashboardController::class, 'filter'])->name('dashboard.filter');
 
 Route::get('/movie-picker', [App\Http\Controllers\MoviePickerController::class, 'showStart'])->name('movie-picker.start');
 Route::get('/movie-picker/quiz', [App\Http\Controllers\MoviePickerController::class, 'showQuiz'])->name('movie-picker.quiz.form');
@@ -11,3 +13,5 @@ Route::get('/movie-picker/result', [App\Http\Controllers\MoviePickerController::
 Route::post('/movie-picker/another', [App\Http\Controllers\MoviePickerController::class, 'getAnother'])->name('movie-picker.another');
 Route::get('/movie-picker/retake', [App\Http\Controllers\MoviePickerController::class, 'retakeQuiz'])->name('movie-picker.retake');
 Route::post('/movie-picker/random', [App\Http\Controllers\MoviePickerController::class, 'showRandom'])->name('movie-picker.random');
+Route::get('/movies-by-genre/{genre}', [GenreController::class, 'moviesByGenre'])->name('movies.by.genre');
+Route::get('/movies-by-genre-page', [GenreController::class, 'moviesByGenrePage'])->name('movies.by.genre.page');
