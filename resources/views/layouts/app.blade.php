@@ -10,9 +10,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="{{ url('/') }}">Pick a Movie</a>
-            <div>
-                <!-- Tambahkan link navigasi lain jika perlu -->
-            </div>
+            <form class="d-flex ms-auto" action="{{ route('dashboard') }}" method="GET">
+                <input class="form-control me-2" type="search" name="q" placeholder="Search movies..." aria-label="Search" value="{{ request('q') }}">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
         </div>
     </nav>
     <main class="flex-fill">

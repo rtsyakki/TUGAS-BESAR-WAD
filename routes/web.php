@@ -11,3 +11,4 @@ Route::get('/movie-picker/result', [App\Http\Controllers\MoviePickerController::
 Route::post('/movie-picker/another', [App\Http\Controllers\MoviePickerController::class, 'getAnother'])->name('movie-picker.another');
 Route::get('/movie-picker/retake', [App\Http\Controllers\MoviePickerController::class, 'retakeQuiz'])->name('movie-picker.retake');
 Route::post('/movie-picker/random', [App\Http\Controllers\MoviePickerController::class, 'showRandom'])->name('movie-picker.random');
+Route::get('/movie/{slug}', [App\Http\Controllers\DashboardController::class, 'show'])->name('movie.detail');
