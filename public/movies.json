@@ -790,5 +790,13 @@
     "rating": "PG-13",
     "plot": "Paul Atreides leads a noble family to the desert planet Arrakis, where they must fight for survival against treacherous forces.",
     "special": ["Film luar angkasa", "Film berdasarkan buku"]
+  },
+  {
+    "title": "One",
+    "year": 2021,
+    "genres": ["Action", "Adventure", "Drama"],
+    "rating": "PG-13",
+    "plot": "Paul Atreides leads a noble family to the desert planet Arrakis, where they must fight for survival against treacherous forces.",
+    "special": ["Film luar angkasa", "Film berdasarkan buku"]
   }
 ]
