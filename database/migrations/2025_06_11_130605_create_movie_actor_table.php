@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('movie_actor', function (Blueprint $table) {
-            $table->id();
+            // No need for an auto-increment ID on pivot tables
+            $table->foreignId('movie_id')->constrained()->onDelete('cascade');
+            $table->foreignId('actor_id')->constrained()->onDelete('cascade');
             $table->timestamps();
+
+            // Optionally prevent duplicates
+            $table->unique(['movie_id', 'actor_id']);
         });
     }
 

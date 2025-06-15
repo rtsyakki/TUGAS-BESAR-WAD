@@ -10,8 +10,12 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="{{ url('/') }}">Pick a Movie</a>
-            <div>
-                <!-- Tambahkan link navigasi lain jika perlu -->
+            <a href="{{ route('actors.top') }}" class="btn btn-success ms-3">Top Actors</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- ...menu lain jika ada... -->
             </div>
         </div>
     </nav>
