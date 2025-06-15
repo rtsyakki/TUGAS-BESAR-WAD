@@ -45,4 +45,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function bookmarks()
+    {
+        return $this->hasMany(Bookmark::class);
+    }
+
+    public function hasBookmarked($movieId)
+    {
+        return $this->bookmarks()->where('movie_id', $movieId)->exists();
+    }
 }
