@@ -1,802 +1,362 @@
 [
-  {
-    "title": "Avengers: Endgame",
-    "year": 2019,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "The Avengers assemble once more to undo the damage caused by Thanos in their previous battle and save the universe.",
-    "special": ["Film dengan prekuel atau sekuel", "IMDb Top 250 Movies"]
-  },
-  {
-    "title": "Spider-Man: No Way Home",
-    "year": 2021,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Peter Parker seeks help from Doctor Strange to erase his secret identity but inadvertently opens the multiverse.",
-    "special": ["Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Dark Knight Rises",
-    "year": 2012,
-    "genres": ["Action", "Crime", "Drama"],
-    "rating": "PG-13",
-    "plot": "Batman faces a new threat in the form of the masked terrorist Bane, who plans to destroy Gotham City.",
-    "special": ["IMDb Top 250 Movies", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Guardians of the Galaxy",
-    "year": 2014,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "PG-13",
-    "plot": "A group of intergalactic criminals must pull together to stop a fanatical warrior from taking control of the universe.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Mad Max: Fury Road",
-    "year": 2015,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "R",
-    "plot": "Max teams up with a mysterious woman to escape a post-apocalyptic wasteland while being pursued by a cult leader.",
-    "special": ["Film balapan", "Film dengan kekuatan perempuan"]
-  },
-  {
-    "title": "Frozen",
-    "year": 2013,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "When their kingdom is trapped in eternal winter, two sisters must work together to break the curse and save their home.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Revenant",
-    "year": 2015,
-    "genres": ["Adventure", "Drama", "Thriller"],
-    "rating": "R",
-    "plot": "A frontiersman on a quest for survival after being left for dead must fight his way through a brutal wilderness.",
-    "special": ["Film berdasarkan kisah nyata"]
-  },
-  {
-    "title": "The Social Network",
-    "year": 2010,
-    "genres": ["Biography", "Drama"],
-    "rating": "PG-13",
-    "plot": "The story of Facebook's creation and its founder Mark Zuckerberg's rise to power amid personal and professional struggles.",
-    "special": ["Film berdasarkan kisah nyata"]
-  },
-  {
-    "title": "The Hunger Games",
-    "year": 2012,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "In a dystopian future, a young girl volunteers to take her sister's place in a televised fight to the death.",
-    "special": ["Film berdasarkan buku"]
-  },
-  {
-    "title": "La La Land",
-    "year": 2016,
-    "genres": ["Comedy", "Drama", "Musical"],
-    "rating": "PG-13",
-    "plot": "A jazz musician and an aspiring actress fall in love while pursuing their dreams in Los Angeles.",
-    "special": ["Film berlatar Los Angeles"]
-  },
-  {
-    "title": "Wonder Woman",
-    "year": 2017,
-    "genres": ["Action", "Adventure", "Fantasy"],
-    "rating": "PG-13",
-    "plot": "When an American pilot crashes on their secluded island, Diana, an Amazonian princess, leaves her home to fight in World War I.",
-    "special": ["Film superhero", "Film berlatar Perang Dunia"]
-  },
-  {
-    "title": "Joker",
-    "year": 2019,
-    "genres": ["Crime", "Drama", "Thriller"],
-    "rating": "R",
-    "plot": "A failed comedian is driven insane and becomes the criminal mastermind known as the Joker.",
-    "special": ["Film berdasarkan karakter komik"]
-  },
-  {
-    "title": "The Lion King",
-    "year": 2019,
-    "genres": ["Animation", "Adventure", "Drama"],
-    "rating": "PG",
-    "plot": "Simba, a young lion, must embrace his destiny as king after the death of his father.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Shazam!",
-    "year": 2019,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "PG-13",
-    "plot": "A teenager is granted the ability to transform into an adult superhero by uttering the magic word 'Shazam!'",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Witcher: Nightmare of the Wolf",
-    "year": 2021,
-    "genres": ["Animation", "Action", "Adventure"],
-    "rating": "R",
-    "plot": "A prequel animated film exploring the origin story of Geralt's mentor, Vesemir, and the world of the Witchers.",
-    "special": ["Film animasi", "Film berdasarkan buku"]
-  },
-  {
-    "title": "Black Panther",
-    "year": 2018,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "T'Challa returns home to the African nation of Wakanda to take his rightful place as king, only to face a new adversary.",
-    "special": ["Film superhero", "Film berlatar Afrika"]
-  },
-  {
-    "title": "Avengers: Infinity War",
-    "year": 2018,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "The Avengers must unite to prevent the powerful Thanos from collecting the Infinity Stones and wiping out half the universe.",
-    "special": ["Film dengan prekuel atau sekuel", "IMDb Top 250 Movies"]
-  },
-  {
-    "title": "Parasite",
-    "year": 2019,
-    "genres": ["Drama", "Thriller"],
-    "rating": "R",
-    "plot": "A poor family schemes to become employed by a wealthy family, leading to a series of events that upend both families.",
-    "special": ["Film pemenang Oscar", "Film sosial"]
-  },
-  {
-    "title": "Interstellar",
-    "year": 2014,
-    "genres": ["Adventure", "Drama", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A group of astronauts travels through a wormhole in space to ensure humanity's survival on a distant planet.",
-    "special": ["Film luar angkasa", "IMDb Top 250 Movies"]
-  },
-  {
-    "title": "Toy Story 4",
-    "year": 2019,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "G",
-    "plot": "Woody and Buzz Lightyear try to rescue Forky, a new toy who feels he doesn't belong in the world of toys.",
-    "special": ["Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Rogue One: A Star Wars Story",
-    "year": 2016,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A group of rebels steal the Death Star plans to help bring down the evil Galactic Empire.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Deadpool",
-    "year": 2016,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "R",
-    "plot": "A former special forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers.",
-    "special": ["Film superhero", "Film dengan kekuatan humor"]
-  },
-  {
-    "title": "Skyfall",
-    "year": 2012,
-    "genres": ["Action", "Adventure", "Thriller"],
-    "rating": "PG-13",
-    "plot": "James Bond's loyalty to M is tested when her past comes back to haunt her, threatening her life and the MI6 agency.",
-    "special": ["Film mata-mata dan polisi", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Guardians of the Galaxy Vol. 2",
-    "year": 2017,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "PG-13",
-    "plot": "The Guardians are once again called upon to protect the universe, but family secrets and a new threat complicate their mission.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "A Quiet Place",
-    "year": 2018,
-    "genres": ["Horror", "Thriller"],
-    "rating": "PG-13",
-    "plot": "In a world where creatures hunt by sound, a family must live in silence to survive.",
-    "special": ["Film horor", "Film ketegangan tinggi"]
-  },
-  {
-    "title": "Tenet",
-    "year": 2020,
-    "genres": ["Action", "Sci-Fi", "Thriller"],
-    "rating": "PG-13",
-    "plot": "A secret agent embarks on a dangerous journey to prevent World War III, using time manipulation as his weapon.",
-    "special": ["Film luar angkasa", "Film dengan plot waktu"]
-  },
-  {
-    "title": "Zootopia",
-    "year": 2016,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "A bunny cop and a fox con artist work together to uncover a conspiracy in a city populated by anthropomorphic animals.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Incredibles 2",
-    "year": 2018,
-    "genres": ["Animation", "Action", "Adventure"],
-    "rating": "PG",
-    "plot": "The Incredibles family returns, with Elastigirl leading a campaign to bring superheroes back to the forefront while Mr. Incredible stays at home.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Coco",
-    "year": 2017,
-    "genres": ["Animation", "Adventure", "Family"],
-    "rating": "PG",
-    "plot": "A young boy embarks on an extraordinary journey to the Land of the Dead to discover his family's history and follow his passion for music.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Greatest Showman",
-    "year": 2017,
-    "genres": ["Drama", "Musical"],
-    "rating": "PG",
-    "plot": "P.T. Barnum creates the famous circus in this musical, following the challenges and triumphs of building a worldwide spectacle.",
-    "special": ["Film musikal", "Film inspiratif"]
-  },
-  {
-    "title": "Justice League",
-    "year": 2017,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Batman and Wonder Woman assemble a team of superheroes to save the world from Steppenwolf and his army of Parademons.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "John Wick",
-    "year": 2014,
-    "genres": ["Action", "Crime", "Thriller"],
-    "rating": "R",
-    "plot": "A retired hitman seeks vengeance against those who wronged him, with relentless determination and brutal combat skills.",
-    "special": ["Film aksi", "Film balas dendam"]
-  },
-  {
-    "title": "A Star is Born",
-    "year": 2018,
-    "genres": ["Drama", "Music", "Romance"],
-    "rating": "R",
-    "plot": "A seasoned musician helps a young singer find fame while his career is in decline, leading to personal and professional challenges.",
-    "special": ["Film musikal", "Film romantis"]
-  },
-  {
-    "title": "The Mandalorian",
-    "year": 2019,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG",
-    "plot": "A lone bounty hunter makes his way through the galaxy, encountering various challenges while protecting a mysterious child.",
-    "special": ["Film luar angkasa", "Serial TV"]
-  },
-  {
-    "title": "Shutter Island",
-    "year": 2010,
-    "genres": ["Mystery", "Thriller"],
-    "rating": "R",
-    "plot": "A U.S. Marshal investigates the disappearance of a patient from a mental institution, uncovering shocking truths in the process.",
-    "special": ["Film psikologis", "Film thriller"]
-  },
-  {
-    "title": "Knives Out",
-    "year": 2019,
-    "genres": ["Comedy", "Crime", "Drama"],
-    "rating": "PG-13",
-    "plot": "A detective investigates the death of a wealthy patriarch during a family gathering, uncovering dark secrets within the family.",
-    "special": ["Film misteri", "Film keluarga"]
-  },
-  {
-    "title": "Blade Runner 2049",
-    "year": 2017,
-    "genres": ["Action", "Drama", "Sci-Fi"],
-    "rating": "R",
-    "plot": "A new blade runner uncovers a long-buried secret that has the potential to plunge what's left of society into chaos.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Maze Runner",
-    "year": 2014,
-    "genres": ["Action", "Mystery", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A group of teens is trapped in a maze with no memory of the outside world and must work together to escape.",
-    "special": ["Film berdasarkan buku", "Film aksi"]
-  },
-  {
-    "title": "Mission: Impossible - Fallout",
-    "year": 2018,
-    "genres": ["Action", "Adventure", "Thriller"],
-    "rating": "PG-13",
-    "plot": "Ethan Hunt and his IMF team must track down stolen plutonium while facing a new threat from the mysterious criminal group known as the Apostles.",
-    "special": ["Film mata-mata dan polisi", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Bird Box",
-    "year": 2018,
-    "genres": ["Drama", "Horror", "Sci-Fi"],
-    "rating": "R",
-    "plot": "A mother and her two children must find safety after a mysterious force decimates the population, leaving them to navigate the world blindfolded.",
-    "special": ["Film horor", "Film dystopia"]
-  },
-  {
-    "title": "Dune",
-    "year": 2021,
-    "genres": ["Action", "Adventure", "Drama"],
-    "rating": "PG-13",
-    "plot": "Paul Atreides leads a noble family to the desert planet Arrakis, where they must fight for survival against treacherous forces.",
-    "special": ["Film luar angkasa", "Film berdasarkan buku"]
-  },
-  {
-    "title": "Venom",
-    "year": 2018,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Eddie Brock, a journalist, becomes the host for an alien symbiote, granting him extraordinary powers and a monstrous alter-ego.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Witch",
-    "year": 2015,
-    "genres": ["Drama", "Horror", "Mystery"],
-    "rating": "R",
-    "plot": "A Puritan family in 17th century New England is torn apart by suspicion, paranoia, and an evil presence lurking in the woods.",
-    "special": ["Film horor", "Film sejarah"]
-  },
-  {
-    "title": "It",
-    "year": 2017,
-    "genres": ["Horror", "Mystery", "Thriller"],
-    "rating": "R",
-    "plot": "A group of children must confront their fears and defeat an ancient evil that takes the form of a clown named Pennywise.",
-    "special": ["Film horor", "Film berdasarkan buku"]
-  },
-  {
-    "title": "The Equalizer",
-    "year": 2014,
-    "genres": ["Action", "Crime", "Thriller"],
-    "rating": "R",
-    "plot": "A former black-ops operative seeks redemption by helping those who cannot protect themselves.",
-    "special": ["Film aksi", "Film balas dendam"]
-  },
-  {
-    "title": "Logan",
-    "year": 2017,
-    "genres": ["Action", "Drama", "Sci-Fi"],
-    "rating": "R",
-    "plot": "In a future where mutants are nearly extinct, an aging Logan must protect a young girl with extraordinary powers from deadly forces.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Lego Movie",
-    "year": 2014,
-    "genres": ["Animation", "Action", "Adventure"],
-    "rating": "PG",
-    "plot": "An ordinary Lego mini-figure is mistaken for the special one, destined to save the Lego universe from an evil tyrant.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Secret Life of Pets",
-    "year": 2016,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "Max, a Jack Russell Terrier, enjoys his life in New York City until his owner adopts a large, unruly mutt named Duke.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Hobbit: An Unexpected Journey",
-    "year": 2012,
-    "genres": ["Action", "Adventure", "Fantasy"],
-    "rating": "PG-13",
-    "plot": "Bilbo Baggins embarks on an unexpected journey to help a group of dwarves reclaim their homeland from a dragon.",
-    "special": ["Film berdasarkan buku", "Film luar angkasa"]
-  },
-  {
-    "title": "The Secret Life of Walter Mitty",
-    "year": 2013,
-    "genres": ["Adventure", "Comedy", "Drama"],
-    "rating": "PG",
-    "plot": "A mild-mannered man escapes his ordinary life through daydreams, but soon embarks on a real-life adventure to find a missing photograph.",
-    "special": ["Film petualangan", "Film inspiratif"]
-  },
-  {
-    "title": "Pacific Rim",
-    "year": 2013,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "As giant monsters known as Kaiju emerge from the ocean, humanity fights back by piloting massive robots to protect the Earth.",
-    "special": ["Film luar angkasa", "Film dengan monster"]
-  },
-  {
-    "title": "Kingsman: The Secret Service",
-    "year": 2014,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "R",
-    "plot": "A street-smart teenager is recruited into a secret spy organization and trained to become a highly skilled agent.",
-    "special": ["Film mata-mata dan polisi", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Croods",
-    "year": 2013,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "In a prehistoric world, a family of cavemen must venture into the unknown after their home is destroyed, facing challenges and discoveries.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Fate of the Furious",
-    "year": 2017,
-    "genres": ["Action", "Adventure", "Crime"],
-    "rating": "PG-13",
-    "plot": "Dominic Toretto and his team face a new threat when a cyberterrorist blackmails Dom into working against his family.",
-    "special": ["Film balapan", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Frozen II",
-    "year": 2019,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "Elsa, Anna, Kristoff, and Olaf journey into the unknown to find the source of Elsa's powers and save their kingdom.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Conjuring",
-    "year": 2013,
-    "genres": ["Horror", "Mystery", "Thriller"],
-    "rating": "R",
-    "plot": "Paranormal investigators Ed and Lorraine Warren work to help a family being terrorized by a dark force in their farmhouse.",
-    "special": ["Film horor", "Film berdasarkan kisah nyata"]
-  },
-  {
-    "title": "Deadpool 2",
-    "year": 2018,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "R",
-    "plot": "Deadpool forms a team of mutants to protect a young boy from a dangerous time-traveling soldier, Cable.",
-    "special": ["Film superhero", "Film dengan kekuatan humor"]
-  },
-  {
-    "title": "The Jungle Book",
-    "year": 2016,
-    "genres": ["Adventure", "Drama", "Family"],
-    "rating": "PG",
-    "plot": "A young boy raised by wolves must face his fears and confront the evil tiger Shere Khan in the jungle.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "The Angry Birds Movie",
-    "year": 2016,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "The birds of Bird Island must come together to fight a green pig invasion that threatens their peaceful lives.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Harry Potter and the Deathly Hallows – Part 2",
-    "year": 2011,
-    "genres": ["Adventure", "Fantasy", "Mystery"],
-    "rating": "PG-13",
-    "plot": "Harry Potter and his friends make their final stand against Lord Voldemort as the wizarding world prepares for the ultimate battle.",
-    "special": ["Film berdasarkan buku", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Logan Lucky",
-    "year": 2017,
-    "genres": ["Comedy", "Crime"],
-    "rating": "PG-13",
-    "plot": "Two brothers plan a heist during a NASCAR race, aiming to steal money from the Charlotte Motor Speedway.",
-    "special": ["Film perampokan", "Film komedi"]
-  },
-  {
-    "title": "The Martian",
-    "year": 2015,
-    "genres": ["Adventure", "Drama", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Stranded on Mars, an astronaut uses his ingenuity and knowledge to survive while awaiting rescue.",
-    "special": ["Film luar angkasa", "Film berdasarkan buku"]
-  },
-  {
-    "title": "The Meg",
-    "year": 2018,
-    "genres": ["Action", "Horror", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A deep-sea submersible is attacked by a massive prehistoric shark, forcing a rescue mission to prevent a catastrophe.",
-    "special": ["Film horor", "Film dengan monster"]
-  },
-  {
-    "title": "Spider-Man: Far From Home",
-    "year": 2019,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Peter Parker faces a new challenge when a mysterious villain named Mysterio threatens his vacation with friends across Europe.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Iron Man",
-    "year": 2008,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Billionaire Tony Stark builds a powerful suit of armor and becomes the superhero Iron Man, taking on enemies both technological and human.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Incredibles",
-    "year": 2004,
-    "genres": ["Animation", "Action", "Adventure"],
-    "rating": "PG",
-    "plot": "A family of superheroes must come out of hiding to save the world from an evil mastermind, all while balancing their family life.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Alita: Battle Angel",
-    "year": 2019,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A cyborg named Alita is discovered and awakens with no memory, beginning a journey to find her past and understand her true purpose.",
-    "special": ["Film luar angkasa", "Film dengan kekuatan perempuan"]
-  },
-  {
-    "title": "Top Gun: Maverick",
-    "year": 2022,
-    "genres": ["Action", "Drama"],
-    "rating": "PG-13",
-    "plot": "After more than thirty years of service, Maverick is still pushing the envelope as a top naval aviator.",
-    "special": ["Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Avatar: The Way of Water",
-    "year": 2022,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Jake Sully lives with his newfound family formed on the planet of Pandora. Trouble soon follows them.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Black Panther: Wakanda Forever",
-    "year": 2022,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
-    "special": ["Film superhero", "Film dengan kekuatan perempuan"]
-  },
-  {
-    "title": "The Batman",
-    "year": 2022,
-    "genres": ["Action", "Crime", "Drama"],
-    "rating": "PG-13",
-    "plot": "Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues.",
-    "special": ["Film superhero", "Film misteri"]
-  },
-  {
-    "title": "Doctor Strange in the Multiverse of Madness",
-    "year": 2022,
-    "genres": ["Action", "Adventure", "Fantasy"],
-    "rating": "PG-13",
-    "plot": "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Jurassic World Dominion",
-    "year": 2022,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Four years after the destruction of Isla Nublar, dinosaurs now live—and hunt—alongside humans all over the world.",
-    "special": ["Film dengan prekuel atau sekuel", "Film petualangan"]
-  },
-  {
-    "title": "Minions: The Rise of Gru",
-    "year": 2022,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Thor: Love and Thunder",
-    "year": 2022,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "PG-13",
-    "plot": "Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Puss in Boots: The Last Wish",
-    "year": 2022,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Guardians of the Galaxy Vol. 3",
-    "year": 2023,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "PG-13",
-    "plot": "The Guardians embark on a mission to protect one of their own that could lead to the end of the team.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "The Marvels",
-    "year": 2023,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Carol Danvers, Kamala Khan, and Monica Rambeau team up to save the universe.",
-    "special": ["Film superhero", "Film dengan kekuatan perempuan"]
-  },
-  {
-    "title": "Oppenheimer",
-    "year": 2023,
-    "genres": ["Biography", "Drama", "History"],
-    "rating": "R",
-    "plot": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
-    "special": ["Film berdasarkan kisah nyata", "Film sejarah"]
-  },
-  {
-    "title": "Barbie",
-    "year": 2023,
-    "genres": ["Adventure", "Comedy", "Fantasy"],
-    "rating": "PG-13",
-    "plot": "Barbie suffers a crisis that leads her to question her world and her existence.",
-    "special": ["Film keluarga", "Film dengan kekuatan perempuan"]
-  },
-  {
-    "title": "Mission: Impossible – Dead Reckoning Part One",
-    "year": 2023,
-    "genres": ["Action", "Adventure", "Thriller"],
-    "rating": "PG-13",
-    "plot": "Ethan Hunt and his IMF team embark on their most dangerous mission yet.",
-    "special": ["Film mata-mata dan polisi", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "John Wick: Chapter 4",
-    "year": 2023,
-    "genres": ["Action", "Crime", "Thriller"],
-    "rating": "R",
-    "plot": "John Wick uncovers a path to defeating The High Table, but before he can earn his freedom, Wick must face a new enemy.",
-    "special": ["Film aksi", "Film balas dendam"]
-  },
-  {
-    "title": "Wonka",
-    "year": 2023,
-    "genres": ["Adventure", "Comedy", "Family"],
-    "rating": "PG",
-    "plot": "The story of how Willy Wonka became the greatest inventor, magician and chocolate-maker in the world.",
-    "special": ["Film keluarga", "Film musikal"]
-  },
-  {
-    "title": "Dune: Part Two",
-    "year": 2024,
-    "genres": ["Action", "Adventure", "Drama"],
-    "rating": "PG-13",
-    "plot": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
-    "special": ["Film luar angkasa", "Film berdasarkan buku"]
-  },
-  {
-    "title": "Kung Fu Panda 4",
-    "year": 2024,
-    "genres": ["Animation", "Action", "Adventure"],
-    "rating": "PG",
-    "plot": "Po faces a new villain and must train a new warrior for the Valley of Peace.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Inside Out 2",
-    "year": 2024,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "Riley navigates new emotions as she enters her teenage years.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Deadpool 3",
-    "year": 2024,
-    "genres": ["Action", "Adventure", "Comedy"],
-    "rating": "R",
-    "plot": "Deadpool joins the Marvel Cinematic Universe in a new adventure.",
-    "special": ["Film superhero", "Film dengan kekuatan humor"]
-  },
-  {
-    "title": "Avatar 3",
-    "year": 2025,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "The next chapter in the Avatar saga continues the story of Pandora.",
-    "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Fantastic Four",
-    "year": 2025,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Marvel's first family of superheroes returns to the big screen.",
-    "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Inception",
-    "year": 2010,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A thief who enters the dreams of others to steal secrets is given a chance to have his criminal history erased.",
-    "special": ["Film dengan plot waktu", "IMDb Top 250 Movies"]
-  },
-  {
-    "title": "The Lord of the Rings: The Return of the King",
-    "year": 2003,
-    "genres": ["Action", "Adventure", "Drama"],
-    "rating": "PG-13",
-    "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-    "special": ["Film berdasarkan buku", "Film pemenang Oscar"]
-  },
-  {
-    "title": "The Dark Knight",
-    "year": 2008,
-    "genres": ["Action", "Crime", "Drama"],
-    "rating": "PG-13",
-    "plot": "Batman faces the Joker, a criminal mastermind who seeks to create chaos in Gotham City.",
-    "special": ["Film superhero", "IMDb Top 250 Movies"]
-  },
-  {
-    "title": "Avatar",
-    "year": 2009,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
-    "special": ["Film luar angkasa", "Film dengan efek visual terbaik"]
-  },
-  {
-    "title": "Frozen",
-    "year": 2013,
-    "genres": ["Animation", "Adventure", "Comedy"],
-    "rating": "PG",
-    "plot": "When their kingdom is trapped in eternal winter, two sisters must work together to break the curse and save their home.",
-    "special": ["Film animasi", "Film keluarga"]
-  },
-  {
-    "title": "Black Panther",
-    "year": 2018,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "T'Challa returns home to the African nation of Wakanda to take his rightful place as king, only to face a new adversary.",
-    "special": ["Film superhero", "Film berlatar Afrika"]
-  },
-  {
-    "title": "Interstellar",
-    "year": 2014,
-    "genres": ["Adventure", "Drama", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "A group of astronauts travels through a wormhole in space to ensure humanity's survival on a distant planet.",
-    "special": ["Film luar angkasa", "IMDb Top 250 Movies"]
-  },
-  {
-    "title": "Joker",
-    "year": 2019,
-    "genres": ["Crime", "Drama", "Thriller"],
-    "rating": "R",
-    "plot": "A failed comedian is driven insane and becomes the criminal mastermind known as the Joker.",
-    "special": ["Film berdasarkan karakter komik"]
-  },
-  {
-    "title": "Spider-Man: No Way Home",
-    "year": 2021,
-    "genres": ["Action", "Adventure", "Sci-Fi"],
-    "rating": "PG-13",
-    "plot": "Peter Parker seeks help from Doctor Strange to erase his secret identity but inadvertently opens the multiverse.",
-    "special": ["Film dengan prekuel atau sekuel"]
-  },
-  {
-    "title": "Dune",
-    "year": 2021,
-    "genres": ["Action", "Adventure", "Drama"],
-    "rating": "PG-13",
-    "plot": "Paul Atreides leads a noble family to the desert planet Arrakis, where they must fight for survival against treacherous forces.",
-    "special": ["Film luar angkasa", "Film berdasarkan buku"]
-  },
-  {
-    "title": "One",
-    "year": 2021,
-    "genres": ["Action", "Adventure", "Drama"],
-    "rating": "PG-13",
-    "plot": "Paul Atreides leads a noble family to the desert planet Arrakis, where they must fight for survival against treacherous forces.",
-    "special": ["Film luar angkasa", "Film berdasarkan buku"]
-  }
+    {
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 9.2,
+        "plot": "The Avengers assemble once more to undo the damage caused by Thanos in their previous battle and save the universe.",
+        "special": ["Film dengan prekuel atau sekuel", "IMDb Top 250 Movies"]
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "year": 2021,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 8.5,
+        "plot": "Peter Parker seeks help from Doctor Strange to erase his secret identity but inadvertently opens the multiverse.",
+        "special": ["Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "The Dark Knight Rises",
+        "year": 2012,
+        "genres": ["Action", "Crime", "Drama"],
+        "rating": 8.4,
+        "plot": "Batman faces a new threat in the form of the masked terrorist Bane, who plans to destroy Gotham City.",
+        "special": ["IMDb Top 250 Movies", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Guardians of the Galaxy",
+        "year": 2014,
+        "genres": ["Action", "Adventure", "Comedy"],
+        "rating": 8.0,
+        "plot": "A group of intergalactic criminals must pull together to stop a fanatical warrior from taking control of the universe.",
+        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Mad Max: Fury Road",
+        "year": 2015,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 8.1,
+        "plot": "Max teams up with a mysterious woman to escape a post-apocalyptic wasteland while being pursued by a cult leader.",
+        "special": ["Film balapan", "Film dengan kekuatan perempuan"]
+    },
+    {
+        "title": "Star Wars: The Force Awakens",
+        "year": 2015,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 7.8,
+        "plot": "Three decades after the defeat of the Galactic Empire, a new threat arises in the militant First Order.",
+        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Deadpool",
+        "year": 2016,
+        "genres": ["Action", "Comedy", "Adventure"],
+        "rating": 8.0,
+        "plot": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
+        "special": ["Film antihero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "La La Land",
+        "year": 2016,
+        "genres": ["Comedy", "Drama", "Music"],
+        "rating": 8.0,
+        "plot": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations.",
+        "special": ["Film musikal", "Pemenang Oscar"]
+    },
+    {
+        "title": "Logan",
+        "year": 2017,
+        "genres": ["Action", "Drama", "Sci-Fi"],
+        "rating": 8.1,
+        "plot": "In a future where mutants are nearly extinct, an elderly and weary Logan leads a quiet life until he meets a young mutant.",
+        "special": ["Film dengan prekuel atau sekuel", "Film superhero"]
+    },
+    {
+        "title": "Get Out",
+        "year": 2017,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "rating": 7.7,
+        "plot": "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point.",
+        "special": ["Film horor", "Pemenang Oscar"]
+    },
+    {
+        "title": "Coco",
+        "year": 2017,
+        "genres": ["Animation", "Adventure", "Family"],
+        "rating": 8.4,
+        "plot": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather.",
+        "special": ["Film animasi", "Pemenang Oscar"]
+    },
+    {
+        "title": "Black Panther",
+        "year": 2018,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 7.3,
+        "plot": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future.",
+        "special": ["Film superhero", "Film dengan kekuatan perempuan"]
+    },
+    {
+        "title": "A Star Is Born",
+        "year": 2018,
+        "genres": ["Drama", "Music", "Romance"],
+        "rating": 7.6,
+        "plot": "A musician helps a young singer find fame as age and alcoholism send his own career into a downward spiral.",
+        "special": ["Film musikal", "Pemenang Oscar"]
+    },
+    {
+        "title": "Parasite",
+        "year": 2019,
+        "genres": ["Comedy", "Drama", "Thriller"],
+        "rating": 8.5,
+        "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+        "special": ["Pemenang Oscar", "IMDb Top 250 Movies"]
+    },
+    {
+        "title": "Joker",
+        "year": 2019,
+        "genres": ["Crime", "Drama", "Thriller"],
+        "rating": 8.4,
+        "plot": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society, leading him into a downward spiral of revolution and bloody crime.",
+        "special": ["Film antihero", "IMDb Top 250 Movies"]
+    },
+    {
+        "title": "Knives Out",
+        "year": 2019,
+        "genres": ["Comedy", "Crime", "Drama"],
+        "rating": 7.9,
+        "plot": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+        "special": ["Film misteri", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "1917",
+        "year": 2019,
+        "genres": ["Drama", "War"],
+        "rating": 8.2,
+        "plot": "Two young British soldiers during the First World War are given an impossible mission: deliver a message deep in enemy territory.",
+        "special": ["Film perang", "Pemenang Oscar"]
+    },
+    {
+        "title": "Soul",
+        "year": 2020,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 8.0,
+        "plot": "A musician who has lost his passion for music is transported out of his body and must find his way back.",
+        "special": ["Film animasi", "Pemenang Oscar"]
+    },
+    {
+        "title": "Tenet",
+        "year": 2020,
+        "genres": ["Action", "Sci-Fi", "Thriller"],
+        "rating": 7.3,
+        "plot": "Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage.",
+        "special": ["Film time travel", "Film Christopher Nolan"]
+    },
+    {
+        "title": "The Trial of the Chicago 7",
+        "year": 2020,
+        "genres": ["Drama", "History", "Thriller"],
+        "rating": 7.8,
+        "plot": "The story of 7 people on trial stemming from various charges surrounding the uprising at the 1968 Democratic National Convention in Chicago.",
+        "special": ["Film sejarah", "Pemenang Oscar"]
+    },
+    {
+        "title": "Dune",
+        "year": 2021,
+        "genres": ["Adventure", "Drama", "Sci-Fi"],
+        "rating": 8.0,
+        "plot": "Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "No Time to Die",
+        "year": 2021,
+        "genres": ["Action", "Adventure", "Thriller"],
+        "rating": 7.3,
+        "plot": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help.",
+        "special": ["Film dengan prekuel atau sekuel", "Film mata-mata"]
+    },
+    {
+        "title": "Encanto",
+        "year": 2021,
+        "genres": ["Animation", "Comedy", "Family"],
+        "rating": 7.2,
+        "plot": "A Colombian teenage girl has to face the frustration of being the only member of her family without magical powers.",
+        "special": ["Film animasi", "Pemenang Oscar"]
+    },
+    {
+        "title": "The Batman",
+        "year": 2022,
+        "genres": ["Action", "Crime", "Drama"],
+        "rating": 7.8,
+        "plot": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption.",
+        "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Top Gun: Maverick",
+        "year": 2022,
+        "genres": ["Action", "Drama"],
+        "rating": 8.2,
+        "plot": "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs.",
+        "special": ["Film balapan", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Everything Everywhere All at Once",
+        "year": 2022,
+        "genres": ["Action", "Adventure", "Comedy"],
+        "rating": 8.0,
+        "plot": "A middle-aged Chinese immigrant is swept up into an insane adventure, where she alone can save the world by exploring other universes.",
+        "special": ["Pemenang Oscar", "Film multiverse"]
+    },
+    {
+        "title": "Avatar: The Way of Water",
+        "year": 2022,
+        "genres": ["Action", "Adventure", "Fantasy"],
+        "rating": 7.6,
+        "plot": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns, Jake must fight a difficult war against the humans.",
+        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Glass Onion: A Knives Out Mystery",
+        "year": 2022,
+        "genres": ["Comedy", "Crime", "Drama"],
+        "rating": 7.1,
+        "plot": "Famed Southern detective Benoit Blanc travels to Greece for his latest case.",
+        "special": ["Film misteri", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Puss in Boots: The Last Wish",
+        "year": 2022,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 7.9,
+        "plot": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives.",
+        "special": ["Film animasi", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "John Wick: Chapter 4",
+        "year": 2023,
+        "genres": ["Action", "Crime", "Thriller"],
+        "rating": 7.8,
+        "plot": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy.",
+        "special": ["Film balapan", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Oppenheimer",
+        "year": 2023,
+        "genres": ["Biography", "Drama", "History"],
+        "rating": 8.5,
+        "plot": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+        "special": ["Pemenang Oscar", "Film sejarah"]
+    },
+    {
+        "title": "Barbie",
+        "year": 2023,
+        "genres": ["Adventure", "Comedy", "Fantasy"],
+        "rating": 7.0,
+        "plot": "Barbie suffers a crisis that leads her to question her world and her existence.",
+        "special": ["Film dengan kekuatan perempuan", "Film fantasi"]
+    },
+    {
+        "title": "Spider-Man: Across the Spider-Verse",
+        "year": 2023,
+        "genres": ["Animation", "Action", "Adventure"],
+        "rating": 8.6,
+        "plot": "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
+        "special": ["Film animasi", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Guardians of the Galaxy Vol. 3",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Comedy"],
+        "rating": 8.1,
+        "plot": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own.",
+        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "The Super Mario Bros. Movie",
+        "year": 2023,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 7.1,
+        "plot": "A plumber named Mario travels through an underground labyrinth with his brother, Luigi, trying to save a captured princess.",
+        "special": ["Film animasi", "Film adaptasi game"]
+    },
+    {
+        "title": "Mission: Impossible – Dead Reckoning Part One",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Thriller"],
+        "rating": 7.8,
+        "plot": "Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.",
+        "special": ["Film dengan prekuel atau sekuel", "Film mata-mata"]
+    },
+    {
+        "title": "Past Lives",
+        "year": 2023,
+        "genres": ["Drama", "Romance"],
+        "rating": 8.0,
+        "plot": "Nora and Hae Sung, two deeply connected childhood friends, are wrest apart after Nora's family emigrates from South Korea.",
+        "special": ["Film romantis", "Pemenang Oscar"]
+    },
+    {
+        "title": "Killers of the Flower Moon",
+        "year": 2023,
+        "genres": ["Crime", "Drama", "History"],
+        "rating": 7.7,
+        "plot": "Members of the Osage tribe in the United States are murdered under mysterious circumstances in the 1920s.",
+        "special": ["Film sejarah", "Pemenang Oscar"]
+    },
+    {
+        "title": "Wonka",
+        "year": 2023,
+        "genres": ["Adventure", "Comedy", "Family"],
+        "rating": 7.2,
+        "plot": "The story of how Willy Wonka became the greatest chocolate maker in the world.",
+        "special": ["Film musikal", "Film fantasi"]
+    },
+    {
+        "title": "Godzilla Minus One",
+        "year": 2023,
+        "genres": ["Action", "Drama", "Sci-Fi"],
+        "rating": 8.1,
+        "plot": "Postwar Japan is at its lowest point when a new crisis emerges in the form of a giant monster.",
+        "special": ["Film monster", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Dune: Part Two",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Drama"],
+        "rating": 8.7,
+        "plot": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Inside Out 2",
+        "year": 2024,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 8.3,
+        "plot": "Riley navigates new emotions as she enters her teenage years, with Joy and her friends learning to adapt.",
+        "special": ["Film animasi", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Furiosa: A Mad Max Saga",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 7.9,
+        "plot": "As the world falls, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde.",
+        "special": ["Film balapan", "Film dengan kekuatan perempuan"]
+    },
+    {
+        "title": "Kingdom of the Planet of the Apes",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 7.5,
+        "plot": "Many years after Caesar's reign, a new tyrannical ape leader builds his empire, while a young ape embarks on a journey.",
+        "special": ["Film dengan prekuel atau sekuel", "Film luar angkasa"]
+    },
+    {
+        "title": "A Quiet Place: Day One",
+        "year": 2024,
+        "genres": ["Drama", "Horror", "Sci-Fi"],
+        "rating": 7.4,
+        "plot": "A prequel revealing the day the world went quiet as mysterious creatures attack humanity.",
+        "special": ["Film horor", "Film dengan prekuel atau sekuel"]
+    }
 ]

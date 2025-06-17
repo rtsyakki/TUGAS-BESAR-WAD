@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->integer('year');
-            $table->string('rating');
+            $table->unsignedTinyInteger('rating');
             $table->text('plot');
             $table->json('special')->nullable();
             $table->timestamps();
