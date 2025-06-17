@@ -14,6 +14,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="{{ url('/') }}">Pick a Movie</a>
+            <a href="{{ route('actors.top') }}" class="btn btn-success ms-3">Top Actors</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+       
+                
             <form class="d-flex ms-auto" action="{{ route('dashboard') }}" method="GET">
                 <input class="form-control me-2" type="search" name="q" placeholder="Search movies..." aria-label="Search" value="{{ request('q') }}">
                 <button class="btn btn-outline-primary" type="submit">Search</button>
