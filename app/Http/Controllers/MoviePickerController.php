@@ -50,8 +50,26 @@ class MoviePickerController extends Controller
         }
     }
 
-    public function showResult()
+    public function showResult(Request $request)
     {
+        // Handle parameter dari bookmark
+        if ($request->has('success') && $request->get('success') === 'bookmark_added') {
+            session()->flash('success', 'Film berhasil ditambahkan ke bookmark!');
+        }
+        
+        if ($request->has('info') && $request->get('info') === 'already_bookmarked') {
+            session()->flash('info', 'Film sudah ada di bookmark Anda!');
+        }
+        
+        if ($request->has('error')) {
+            $error = $request->get('error');
+            if ($error === 'login_required') {
+                session()->flash('error', 'Silakan login terlebih dahulu untuk menambahkan film ke bookmark.');
+            } elseif ($error === 'system_error') {
+                session()->flash('error', 'Terjadi kesalahan saat menambahkan bookmark.');
+            }
+        }
+
         $answers = Session::get('quiz_answers');
         $movie = $this->getRecommendedMovie($answers);
         return view('movie_picker.result', compact('movie'));
