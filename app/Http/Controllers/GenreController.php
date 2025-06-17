@@ -2,83 +2,61 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use App\Models\Movie;
+use App\Models\Genre;
 
 class GenreController extends Controller
 {
-    public function topGenres()
+    // Method untuk halaman Top Genre (tanpa filter)
+    public function topGenresPage()
     {
-        $json = File::get(public_path('genres.json'));
-        $genres = json_decode($json);
+        // Load genres dari database, fallback ke JSON jika kosong
+        $genres = Genre::pluck('name')->toArray();
 
-        // Jika hanya ingin menampilkan semua genre dari JSON
-        return view('top-genres', ['topGenres' => $genres]);
-    }
-    
-    public function moviesByGenre($genre)
-    {
-        $json = file_get_contents(public_path('movies.json'));
-        $movies = json_decode($json);
-
-        $filtered = array_filter($movies, function ($movie) use ($genre) {
-            return in_array($genre, $movie->genres);
-        });
-
-        $ratingOrder = ['G' => 4, 'PG' => 3, 'PG-13' => 2, 'R' => 1];
-        usort($filtered, function ($a, $b) use ($ratingOrder) {
-            $ra = $ratingOrder[$a->rating] ?? 0;
-            $rb = $ratingOrder[$b->rating] ?? 0;
-            return $rb <=> $ra;
-        });
-
-        $topMovies = array_slice($filtered, 0, 5);
-
-        return response()->json($topMovies);
-    }
-
-    public function moviesByGenrePage(Request $request)
-    {
-        $genre = $request->query('genre');
-        $json = file_get_contents(public_path('movies.json'));
-        $movies = json_decode($json);
-
-        $filtered = array_filter($movies, function ($movie) use ($genre) {
-            return isset($movie->genres) && in_array($genre, $movie->genres);
-        });
-
-        $ratingOrder = ['G' => 4, 'PG' => 3, 'PG-13' => 2, 'R' => 1];
-        usort($filtered, function ($a, $b) use ($ratingOrder) {
-            $ra = $ratingOrder[$a->rating] ?? 0;
-            $rb = $ratingOrder[$b->rating] ?? 0;
-            return $rb <=> $ra;
-        });
-
-        $topMovies = array_slice($filtered, 0, 5);
+        if (empty($genres)) {
+            $genres = json_decode(file_get_contents(public_path('genres.json')), true);
+        }
 
         return view('top-genres', [
-            'genre' => $genre,
-            'topMovies' => $topMovies
+            'genres' => $genres,
+            'selectedGenre' => null,
+            'topMovies' => []
         ]);
     }
 
-    public function apiMoviesByGenre($genre)
+    // Method untuk filter di halaman Top Genre
+    public function filterTopGenres(Request $request)
     {
-        $json = file_get_contents(public_path('movies.json'));
-        $movies = json_decode($json);
+        $selectedGenre = $request->genre;
 
-        $filtered = array_filter($movies, function ($movie) use ($genre) {
-            return isset($movie->genres) && in_array($genre, $movie->genres);
-        });
+        // Load genres
+        $genres = Genre::pluck('name')->toArray();
+        if (empty($genres)) {
+            $genres = json_decode(file_get_contents(public_path('genres.json')), true);
+        }
 
-        // Urutkan berdasarkan rating tertinggi ke terendah
-        usort($filtered, function ($a, $b) {
-            return $b->rating <=> $a->rating;
-        });
+        $topMovies = [];
+        if ($selectedGenre) {
+            $topMovies = Movie::whereHas('genres', function ($query) use ($selectedGenre) {
+                $query->where('name', $selectedGenre);
+            })
+                ->with('genres')
+                ->orderByDesc('rating')
+                ->limit(5)
+                ->get()
+                ->map(function ($movie) {
+                    return [
+                        'id' => $movie->id,
+                        'title' => $movie->title,
+                        'year' => $movie->year,
+                        'rating' => $movie->rating,
+                        'plot' => $movie->plot,
+                        'genres' => $movie->genres->pluck('name')->toArray()
+                    ];
+                })->toArray();
+        }
 
-        // Ambil 5 teratas (atau semua jika kurang dari 5)
-        $topMovies = array_slice($filtered, 0, 5);
-
-        return response()->json($topMovies);
+        return view('top-genres', compact('genres', 'selectedGenre', 'topMovies'));
     }
 }

@@ -5,7 +5,6 @@ use App\Http\Controllers\ActorController;
 use App\Http\Controllers\GenreController;
 
 Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
-Route::get('/dashboard/filter', [App\Http\Controllers\DashboardController::class, 'filter'])->name('dashboard.filter');
 
 // Authentication routes
 Route::get('/login', [App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login');
@@ -23,12 +22,15 @@ Route::post('/movie-picker/another', [App\Http\Controllers\MoviePickerController
 Route::get('/movie-picker/retake', [App\Http\Controllers\MoviePickerController::class, 'retakeQuiz'])->name('movie-picker.retake');
 Route::post('/movie-picker/random', [App\Http\Controllers\MoviePickerController::class, 'showRandom'])->name('movie-picker.random');
 
+// Fitur Top Actor
 Route::get('/actors/top', [ActorController::class, 'top'])->name('actors.top');
 Route::get('/actors/{id}/movies', [ActorController::class, 'movies'])->name('actors.movies');
 
-Route::get('/movies-by-genre/{genre}', [GenreController::class, 'moviesByGenre'])->name('movies.by.genre');
-Route::get('/movies-by-genre-page', [GenreController::class, 'moviesByGenrePage'])->name('movies.by.genre.page');
-// Bookmark routes
+// Fitur Top Genre
+Route::get('/top-genres', [GenreController::class, 'topGenresPage'])->name('genre.top');
+Route::get('/top-genres/filter', [GenreController::class, 'filterTopGenres'])->name('genre.top.filter');
+
+// Fitur Bookmark
 Route::get('/bookmarks', [App\Http\Controllers\BookmarkController::class, 'index'])->name('bookmarks.index');
 Route::post('/bookmarks', [App\Http\Controllers\BookmarkController::class, 'store'])->name('bookmarks.store');
 Route::get('/bookmarks/{id}/edit', [App\Http\Controllers\BookmarkController::class, 'edit'])->name('bookmarks.edit');
@@ -36,4 +38,5 @@ Route::put('/bookmarks/{id}', [App\Http\Controllers\BookmarkController::class, '
 Route::delete('/bookmarks/{id}', [App\Http\Controllers\BookmarkController::class, 'destroy'])->name('bookmarks.destroy');
 Route::get('/bookmarks/check/{movieId}', [App\Http\Controllers\BookmarkController::class, 'check'])->name('bookmarks.check');
 
+// Fitur Movie Search
 Route::get('/movie/{slug}', [App\Http\Controllers\DashboardController::class, 'show'])->name('movie.detail');
