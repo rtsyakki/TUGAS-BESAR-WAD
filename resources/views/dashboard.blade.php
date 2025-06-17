@@ -1,13 +1,100 @@
+<?php
+// No need for use statement here; use fully qualified class names in Blade or import in controller.
+?>
+
 @extends('layouts.app')
 
 @section('content')
 <div class="container mx-auto py-8">
-    <div class="d-flex justify-content-center align-items-center mb-4" style="gap: 24px;">
+    <div class="d-flex flex-row align-items-center justify-content-between mb-5">
         <h1 class="text-3xl font-bold mb-0">Pick a Movie by Mood</h1>
-      
+        <div class="d-flex align-items-center">
+            <label for="genre-dropdown" class="fw-semibold me-2 mb-0">Top Genre Film:</label>
+            <select id="genre-dropdown" class="form-select w-auto">
+                <option value="">-- Pilih Genre --</option>
+                @foreach($genres as $genre)
+                    <option value="{{ route('movies.by.genre.page', ['genre' => is_object($genre) ? $genre->name : $genre]) }}">
+                        {{ is_object($genre) ? $genre->name : $genre }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
     </div>
     <div class="text-center my-5">
         <a href="{{ route('movie-picker.start') }}" class="btn btn-lg btn-primary">Start Now</a>
     </div>
+
+    @if(isset($search) && $search)
+        <h4 class="mb-3">Search Results for: <em>{{ $search }}</em></h4>
+        @if(count($movies))
+            <div class="row">
+                @foreach($movies as $movie)
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="{{ route('movie.detail', ['slug' => \Illuminate\Support\Str::slug($movie['title'])]) }}">
+                                        {{ $movie['title'] ?? '-' }}
+                                    </a>
+                                </h5>
+                                <p class="card-text"><strong>Year:</strong> {{ $movie['year'] ?? '-' }}</p>
+                                <p class="card-text"><strong>Genres:</strong> {{ isset($movie['genres']) ? implode(', ', $movie['genres']) : '-' }}</p>
+                                <p class="card-text"><strong>Rating:</strong> {{ $movie['rating'] ?? '-' }}</p>
+                                <div class="movie-plot" id="plot-{{ $loop->index }}" style="display:none;">
+                                    <hr>
+                                    <strong>Plot:</strong>
+                                    <p>{{ $movie['plot'] ?? 'No plot available.' }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        @else
+            <div class="alert alert-warning">No movies found.</div>
+        @endif
+    @endif
+    <div id="movies-list" class="my-8">
+        @if(isset($filteredMovies) && $selectedGenre)
+            @if(count($filteredMovies) > 0)
+                <h2 class="text-xl font-bold mb-4">Film dengan rating tertinggi:</h2>
+                <ul class="space-y-4">
+                    @foreach($filteredMovies as $movie)
+                        <li class="border p-4 rounded shadow">
+                            <div class="font-semibold text-lg">{{ $movie->title }} ({{ $movie->year }})</div>
+                            <div>Rating: <span class="font-bold">{{ $movie->rating }}</span></div>
+                            <div class="text-sm text-gray-600">{{ $movie->plot ?? '' }}</div>
+                        </li>
+                    @endforeach
+                </ul>
+            @else
+                <p class="text-center text-gray-500">Tidak ada film dengan genre ini.</p>
+            @endif
+        @endif
+    </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.movie-title').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var idx = this.getAttribute('data-movie');
+                var plot = document.getElementById('plot-' + idx);
+                if (plot.style.display === 'none') {
+                    plot.style.display = 'block';
+                } else {
+                    plot.style.display = 'none';
+                }
+            });
+        });
+    });
+document.getElementById('genre-dropdown').addEventListener('change', function() {
+    if(this.value) {
+        window.location.href = this.value;
+    }
+});
+</script>
+@endpush
