@@ -2,6 +2,12 @@
 
 @section('content')
     <div class="container py-5 text-center">
+        {{-- Popup sukses di paling atas --}}
+        <div id="bookmark-success" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+            Film berhasil ditambahkan ke bookmark!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
         <h2 class="mb-4">Rekomendasi Film untuk Anda</h2>
         @if ($movie)
             <div class="card mx-auto" style="max-width: 400px;">
@@ -12,9 +18,15 @@
                     <p class="card-text">{{ $movie->plot }}</p>
 
                     <!-- Bookmark Button -->
-                    <button class="btn btn-outline-primary bookmark-btn" data-movie-id="{{ $movie->id }}">
-                        <i class="bi bi-bookmark-plus"></i> Add to Bookmark
-                    </button>
+                    @auth
+                        <button class="btn btn-outline-primary bookmark-btn" data-movie-id="{{ $movie->id }}">
+                            <i class="bi bi-bookmark-plus"></i> Add to Bookmark
+                        </button>
+                    @else
+                        <a href="{{ route('login') }}" class="btn btn-outline-secondary">
+                            <i class="bi bi-bookmark-plus"></i> Login untuk bookmark
+                        </a>
+                    @endauth
                 </div>
             </div>
         @else
@@ -38,46 +50,43 @@
 @endsection
 
 @section('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const bookmarkBtn = document.querySelector('.bookmark-btn');
-
-            if (bookmarkBtn) {
-                bookmarkBtn.addEventListener('click', function () {
-                    const movieId = this.dataset.movieId;
-
-                    fetch('{{ route("bookmarks.store") }}', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-                        },
-                        body: JSON.stringify({
-                            movie_id: movieId
-                        })
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const bookmarkBtn = document.querySelector('.bookmark-btn');
+        const popup = document.getElementById('bookmark-success');
+        if (bookmarkBtn) {
+            bookmarkBtn.addEventListener('click', function () {
+                const movieId = this.dataset.movieId;
+                fetch('{{ route("bookmarks.store") }}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        movie_id: movieId
                     })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            // Update button state
-                            this.innerHTML = '<i class="bi bi-bookmark-check"></i> Added to Bookmark';
-                            this.classList.remove('btn-outline-primary');
-                            this.classList.add('btn-success');
-                            this.disabled = true;
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        if (popup) {
+                            popup.classList.remove('d-none');
                         }
-                        
-                        // Redirect ke URL yang diberikan backend
-                        if (data.redirect) {
-                            window.location.href = data.redirect;
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        // Redirect ke result page dengan error
-                        window.location.href = '{{ route("movie-picker.result") }}?error=system_error';
-                    });
+                        this.innerHTML = '<i class="bi bi-bookmark-check"></i> Added to Bookmark';
+                        this.classList.remove('btn-outline-primary');
+                        this.classList.add('btn-success');
+                        this.disabled = true;
+                    } else {
+                        alert(data.message || 'Terjadi kesalahan saat menambahkan bookmark');
+                    }
+                })
+                .catch(() => {
+                    alert('Terjadi kesalahan saat menambahkan bookmark');
                 });
-            }
-        });
-    </script>
+            });
+        }
+    });
+</script>
 @endsection

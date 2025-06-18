@@ -56,7 +56,9 @@
                         @endforeach
                     </div>
 
-                    {{ $bookmarks->links() }}
+                    <div class="d-flex justify-content-center">
+                        {{ $bookmarks->onEachSide(1)->links('pagination::bootstrap-5', ['size' => 'sm']) }}
+                    </div>
                 @else
                     <div class="text-center py-5">
                         <i class="bi bi-bookmark display-1 text-muted"></i>

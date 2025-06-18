@@ -37,6 +37,4 @@ Route::get('/bookmarks/{id}/edit', [App\Http\Controllers\BookmarkController::cla
 Route::put('/bookmarks/{id}', [App\Http\Controllers\BookmarkController::class, 'update'])->name('bookmarks.update');
 Route::delete('/bookmarks/{id}', [App\Http\Controllers\BookmarkController::class, 'destroy'])->name('bookmarks.destroy');
 Route::get('/bookmarks/check/{movieId}', [App\Http\Controllers\BookmarkController::class, 'check'])->name('bookmarks.check');
-
-// Fitur Movie Search
-Route::get('/movie/{slug}', [App\Http\Controllers\DashboardController::class, 'show'])->name('movie.detail');
+Route::get('/movies/{slug}', [App\Http\Controllers\MovieController::class, 'show'])->name('movie.detail');

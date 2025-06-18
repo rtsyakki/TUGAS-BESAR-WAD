@@ -2,6 +2,8 @@
 
 @section('content')
     <div class="container py-4">
+        {{-- Popup Success hanya di atas --}}
+
         <!-- Header Simple -->
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Top Movies by Genre</h2>
@@ -38,29 +40,33 @@
                 <small class="text-muted">Sorted by highest rating</small>
             </div>
 
-            @foreach($topMovies as $index => $movie)
+            @foreach($topMovies as $movie)
                 <div class="card mb-3">
                     <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-1 text-center">
-                                <h3 class="text-primary mb-0">#{{ $index + 1 }}</h3>
-                            </div>
-                            <div class="col-md-9">
-                                <h5 class="mb-1">{{ $movie['title'] }} ({{ $movie['year'] }})</h5>
-                                <p class="mb-2">
-                                    <strong>Genres:</strong> {{ implode(', ', $movie['genres']) }}
-                                </p>
-                                <p class="text-muted mb-0">
-                                    {{ \Illuminate\Support\Str::limit($movie['plot'] ?? 'No plot available.', 120) }}</p>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <span class="badge bg-warning text-dark fs-6">{{ $movie['rating'] }}/10</span>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <a href="{{ route('movie.detail', ['slug' => \Illuminate\Support\Str::slug($movie['title'])]) }}"
-                                    class="btn btn-sm btn-outline-info">View</a>
-                            </div>
-                        </div>
+                        <h5>{{ $movie['title'] ?? 'No Title' }}</h5>
+                        <p>{{ is_array($movie['genres']) ? implode(', ', $movie['genres']) : $movie['genres'] }}</p>
+                        <p>{{ $movie['year'] }}</p>
+                        <p>{{ $movie['plot'] }}</p>
+
+                        @auth
+                            @if(!in_array($movie['id'], $bookmarkedMovieIds))
+                                <form action="{{ route('bookmarks.store') }}" method="POST" class="d-inline">
+                                    @csrf
+                                    <input type="hidden" name="movie_id" value="{{ $movie['id'] }}">
+                                    <button type="submit" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-bookmark-plus"></i> Bookmark
+                                    </button>
+                                </form>
+                            @else
+                                <button class="btn btn-success btn-sm" disabled>
+                                    <i class="bi bi-bookmark-check"></i> Sudah di-bookmark
+                                </button>
+                            @endif
+                        @else
+                            <a href="{{ route('login') }}" class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-bookmark-plus"></i> Login untuk bookmark
+                            </a>
+                        @endauth
                     </div>
                 </div>
             @endforeach

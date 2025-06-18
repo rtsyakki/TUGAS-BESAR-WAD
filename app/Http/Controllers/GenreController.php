@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Movie;
 use App\Models\Genre;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Bookmark;
 
 class GenreController extends Controller
 {
@@ -18,10 +20,16 @@ class GenreController extends Controller
             $genres = json_decode(file_get_contents(public_path('genres.json')), true);
         }
 
+        $bookmarkedMovieIds = [];
+        if (Auth::check()) {
+            $bookmarkedMovieIds = Bookmark::where('user_id', Auth::id())->pluck('movie_id')->toArray();
+        }
+
         return view('top-genres', [
             'genres' => $genres,
             'selectedGenre' => null,
-            'topMovies' => []
+            'topMovies' => [],
+            'bookmarkedMovieIds' => $bookmarkedMovieIds
         ]);
     }
 
@@ -57,6 +65,16 @@ class GenreController extends Controller
                 })->toArray();
         }
 
-        return view('top-genres', compact('genres', 'selectedGenre', 'topMovies'));
+        $bookmarkedMovieIds = [];
+        if (Auth::check()) {
+            $bookmarkedMovieIds = Bookmark::where('user_id', Auth::id())->pluck('movie_id')->toArray();
+        }
+
+        return view('top-genres', [
+            'genres' => $genres,
+            'selectedGenre' => $selectedGenre,
+            'topMovies' => $topMovies,
+            'bookmarkedMovieIds' => $bookmarkedMovieIds
+        ]);
     }
 }

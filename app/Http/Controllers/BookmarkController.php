@@ -26,57 +26,21 @@ class BookmarkController extends Controller
 
     public function store(Request $request)
     {
-        try {
-            // Cek apakah user sudah login
-            if (!Auth::check()) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Silakan login terlebih dahulu untuk menambahkan film ke bookmark.',
-                    'redirect' => route('movie-picker.result') . '?error=login_required'
-                ]);
-            }
+        // Validasi dan simpan bookmark
+        Bookmark::firstOrCreate([
+            'user_id' => auth()->id(),
+            'movie_id' => $request->movie_id,
+        ]);
 
-            $request->validate([
-                'movie_id' => 'required|exists:movies,id'
-            ]);
-
-            $userId = Auth::id();
-            $movieId = $request->movie_id;
-
-            // Check if already bookmarked
-            $existingBookmark = Bookmark::where('user_id', $userId)
-                ->where('movie_id', $movieId)
-                ->first();
-
-            if ($existingBookmark) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Film sudah ada di bookmark Anda!',
-                    'redirect' => route('movie-picker.result') . '?info=already_bookmarked'
-                ]);
-            }
-
-            // Create new bookmark
-            Bookmark::create([
-                'user_id' => $userId,
-                'movie_id' => $movieId
-            ]);
-
+        // Penting: cek AJAX
+        if ($request->ajax() || $request->wantsJson()) {
             return response()->json([
                 'success' => true,
-                'message' => 'Film berhasil ditambahkan ke bookmark!',
-                'redirect' => route('movie-picker.result') . '?success=bookmark_added'
+                'message' => 'Film berhasil ditambahkan ke bookmark!'
             ]);
-
-        } catch (\Exception $e) {
-            \Log::error('Bookmark store error: ' . $e->getMessage());
-
-            return response()->json([
-                'success' => false,
-                'message' => 'Terjadi kesalahan: ' . $e->getMessage(),
-                'redirect' => route('movie-picker.result') . '?error=system_error'
-            ], 500);
         }
+
+        return back()->with('success', 'Film berhasil ditambahkan ke bookmark!');
     }
 
     public function edit($id)
