@@ -253,7 +253,7 @@
         "genres": ["Adventure", "Comedy", "Fantasy"],
         "rating": 7.0,
         "plot": "Barbie suffers a crisis that leads her to question her world and her existence.",
-        "special": ["Film dengan kekuatan perempuan", "Film fantasi"]
+        "special": ["Film fantasi", "Film dengan kekuatan perempuan"]
     },
     {
         "title": "Spider-Man: Across the Spider-Verse",
@@ -261,7 +261,15 @@
         "genres": ["Animation", "Action", "Adventure"],
         "rating": 8.6,
         "plot": "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
-        "special": ["Film animasi", "Film dengan prekuel atau sekuel"]
+        "special": ["Film animasi", "Film superhero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "John Wick: Chapter 4",
+        "year": 2023,
+        "genres": ["Action", "Crime", "Thriller"],
+        "rating": 7.8,
+        "plot": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy.",
+        "special": ["Film aksi", "Film dengan prekuel atau sekuel"]
     },
     {
         "title": "Guardians of the Galaxy Vol. 3",
@@ -269,7 +277,7 @@
         "genres": ["Action", "Adventure", "Comedy"],
         "rating": 8.1,
         "plot": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own.",
-        "special": ["Film luar angkasa", "Film dengan prekuel atau sekuel"]
+        "special": ["Film luar angkasa", "Film superhero", "Film dengan prekuel atau sekuel"]
     },
     {
         "title": "The Super Mario Bros. Movie",
@@ -278,14 +286,6 @@
         "rating": 7.1,
         "plot": "A plumber named Mario travels through an underground labyrinth with his brother, Luigi, trying to save a captured princess.",
         "special": ["Film animasi", "Film adaptasi game"]
-    },
-    {
-        "title": "Mission: Impossible – Dead Reckoning Part One",
-        "year": 2023,
-        "genres": ["Action", "Adventure", "Thriller"],
-        "rating": 7.8,
-        "plot": "Ethan Hunt and his IMF team must track down a dangerous weapon before it falls into the wrong hands.",
-        "special": ["Film dengan prekuel atau sekuel", "Film mata-mata"]
     },
     {
         "title": "Past Lives",
@@ -358,5 +358,677 @@
         "rating": 7.4,
         "plot": "A prequel revealing the day the world went quiet as mysterious creatures attack humanity.",
         "special": ["Film horor", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "The Marvels",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Fantasy"],
+        "rating": 7.6,
+        "plot": "Carol Danvers, Kamala Khan, and Monica Rambeau team up to face a new cosmic threat.",
+        "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "The Hunger Games: The Ballad of Songbirds and Snakes",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Drama"],
+        "rating": 7.3,
+        "plot": "A young Coriolanus Snow mentors a tribute from District 12 in the 10th Hunger Games.",
+        "special": ["Film dengan prekuel atau sekuel", "Film adaptasi novel"]
+    },
+    {
+        "title": "The Exorcist: Believer",
+        "year": 2024,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "rating": 6.9,
+        "plot": "Two families are haunted by a demonic presence, leading to a battle against evil.",
+        "special": ["Film horor", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Fast X",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Crime"],
+        "rating": 7.0,
+        "plot": "Dom Toretto and his family face a new threat that could destroy everything they hold dear.",
+        "special": ["Film balapan", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Aquaman and the Lost Kingdom",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Fantasy"],
+        "rating": 6.8,
+        "plot": "Aquaman must forge an uneasy alliance with an unlikely ally to protect Atlantis from a powerful new threat.",
+        "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Mission: Impossible – Dead Reckoning Part Two",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Thriller"],
+        "rating": 7.9,
+        "plot": "Ethan Hunt and his IMF team continue their mission to stop a global catastrophe.",
+        "special": ["Film dengan prekuel atau sekuel", "Film mata-mata"]
+    },
+    {
+        "title": "Indiana Jones and the Dial of Destiny",
+        "year": 2023,
+        "genres": ["Action", "Adventure"],
+        "rating": 6.5,
+        "plot": "Archaeologist Indiana Jones embarks on a new adventure to find a legendary artifact that could change the course of history.",
+        "special": ["Film dengan prekuel atau sekuel", "Film petualangan"]
+    },
+    {
+        "title": "Napoleon",
+        "year": 2023,
+        "genres": ["Biography", "Drama", "History"],
+        "rating": 7.2,
+        "plot": "A look at the military commander's origins and his swift, ruthless climb to emperor, viewed through the prism of his addictive, volatile relationship with his wife Josephine.",
+        "special": ["Film sejarah", "Film biografi"]
+    },
+    {
+        "title": "Elemental",
+        "year": 2023,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 7.0,
+        "plot": "In a city where fire, water, land, and air residents live together, a fiery young woman and a go-with-the-flow guy discover something elemental: how much they actually have in common.",
+        "special": ["Film animasi", "Film keluarga"]
+    },
+    {
+        "title": "The Creator",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 7.3,
+        "plot": "Amid a future war between the human race and the forces of artificial intelligence, a hardened ex-special forces agent finds the secret weapon: a robot in the form of a young child.",
+        "special": ["Film sci-fi", "Film AI"]
+    },
+    {
+        "title": "Wish",
+        "year": 2023,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 6.7,
+        "plot": "A young girl named Asha wishes on a star and gets a more direct answer than she bargained for when a trouble-making star comes down from the sky to join her.",
+        "special": ["Film animasi", "Film musikal"]
+    },
+    {
+        "title": "Poor Things",
+        "year": 2023,
+        "genres": ["Comedy", "Drama", "Romance"],
+        "rating": 8.2,
+        "plot": "The incredible tale about the fantastical evolution of Bella Baxter, a young woman brought back to life by the brilliant and unorthodox scientist Dr. Godwin Baxter.",
+        "special": ["Pemenang Oscar", "Film fantasi"]
+    },
+    {
+        "title": "The Holdovers",
+        "year": 2023,
+        "genres": ["Comedy", "Drama"],
+        "rating": 7.9,
+        "plot": "A cranky history teacher at a prep school is forced to remain on campus over the holidays with a student who has no place to go.",
+        "special": ["Film drama", "Film liburan"]
+    },
+    {
+        "title": "Maestro",
+        "year": 2023,
+        "genres": ["Biography", "Drama", "Music"],
+        "rating": 7.2,
+        "plot": "The complex love story of Leonard Bernstein and Felicia Montealegre, spanning over 30 years.",
+        "special": ["Film biografi", "Film musikal"]
+    },
+    {
+        "title": "Saltburn",
+        "year": 2023,
+        "genres": ["Drama", "Thriller"],
+        "rating": 7.0,
+        "plot": "A student at Oxford University finds himself drawn into the world of a charming and aristocratic classmate.",
+        "special": ["Film thriller", "Film misteri"]
+    },
+    {
+        "title": "Migration",
+        "year": 2023,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 6.8,
+        "plot": "A family of ducks try to convince their overprotective father to go on the vacation of a lifetime.",
+        "special": ["Film animasi", "Film keluarga"]
+    },
+    {
+        "title": "The Iron Claw",
+        "year": 2023,
+        "genres": ["Biography", "Drama", "Sport"],
+        "rating": 7.7,
+        "plot": "The true story of the inseparable Von Erich brothers, who made history in the world of professional wrestling.",
+        "special": ["Film olahraga", "Film biografi"]
+    },
+    {
+        "title": "Society of the Snow",
+        "year": 2023,
+        "genres": ["Adventure", "Biography", "Drama"],
+        "rating": 7.8,
+        "plot": "The story of the 1972 Andes flight disaster and the survivors' struggle for life.",
+        "special": ["Film bertahan hidup", "Film biografi"]
+    },
+    {
+        "title": "Next Goal Wins",
+        "year": 2023,
+        "genres": ["Comedy", "Drama", "Sport"],
+        "rating": 6.5,
+        "plot": "Dutch-American football coach Thomas Rongen attempts the nearly impossible task of turning the American Samoa soccer team into winners.",
+        "special": ["Film olahraga", "Film komedi"]
+    },
+    {
+        "title": "The Zone of Interest",
+        "year": 2023,
+        "genres": ["Drama", "History", "War"],
+        "rating": 7.5,
+        "plot": "The commandant of Auschwitz strives to build a dream life for his family in a house next to the camp.",
+        "special": ["Film sejarah", "Pemenang Oscar"]
+    },
+    {
+        "title": "Anatomy of a Fall",
+        "year": 2023,
+        "genres": ["Crime", "Drama", "Thriller"],
+        "rating": 7.9,
+        "plot": "A woman is suspected of her husband's murder, and their blind son faces a moral dilemma as the main witness.",
+        "special": ["Film misteri", "Pemenang Oscar"]
+    },
+    {
+        "title": "The Boy and the Heron",
+        "year": 2023,
+        "genres": ["Animation", "Adventure", "Drama"],
+        "rating": 7.6,
+        "plot": "A young boy named Mahito, yearning for his mother, ventures into a world shared by the living and the dead.",
+        "special": ["Film animasi", "Film Jepang"]
+    },
+    {
+        "title": "The Beekeeper",
+        "year": 2024,
+        "genres": ["Action", "Thriller"],
+        "rating": 6.9,
+        "plot": "One man's brutal campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful organization known as Beekeepers.",
+        "special": ["Film aksi", "Film balas dendam"]
+    },
+    {
+        "title": "Argylle",
+        "year": 2024,
+        "genres": ["Action", "Thriller"],
+        "rating": 6.3,
+        "plot": "A reclusive author who writes espionage novels about a secret agent and a global spy syndicate discovers the plot of her books mirrors real-life events.",
+        "special": ["Film mata-mata", "Film aksi"]
+    },
+    {
+        "title": "Lisa Frankenstein",
+        "year": 2024,
+        "genres": ["Comedy", "Horror", "Romance"],
+        "rating": 6.2,
+        "plot": "A misunderstood teenager and a reanimated Victorian corpse embark on a murderous journey to find love, happiness, and a few missing body parts.",
+        "special": ["Film horor", "Film komedi"]
+    },
+    {
+        "title": "Madame Web",
+        "year": 2024,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 5.7,
+        "plot": "Cassandra Webb develops psychic abilities and must protect three young women from a mysterious adversary.",
+        "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Kung Fu Panda 4",
+        "year": 2024,
+        "genres": ["Animation", "Action", "Adventure"],
+        "rating": 7.1,
+        "plot": "Po must train a new warrior when he's chosen to become the Spiritual Leader of the Valley of Peace.",
+        "special": ["Film animasi", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "The Whale",
+        "year": 2022,
+        "genres": ["Drama"],
+        "rating": 7.7,
+        "plot": "A reclusive English teacher living with severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.",
+        "special": ["Pemenang Oscar", "Film drama"]
+    },
+    {
+        "title": "Tár",
+        "year": 2022,
+        "genres": ["Drama", "Music"],
+        "rating": 7.5,
+        "plot": "Set in the international world of Western classical music, the film centers on Lydia Tár, widely considered one of the greatest living composer-conductors.",
+        "special": ["Film musikal", "Pemenang Oscar"]
+    },
+    {
+        "title": "Suzume",
+        "year": 2022,
+        "genres": ["Animation", "Adventure", "Drama"],
+        "rating": 7.7,
+        "plot": "A 17-year-old girl named Suzume helps a mysterious young man close doors from the other side that are releasing disasters all over Japan.",
+        "special": ["Film animasi", "Film Jepang"]
+    },
+    {
+        "title": "The Banshees of Inisherin",
+        "year": 2022,
+        "genres": ["Comedy", "Drama"],
+        "rating": 7.7,
+        "plot": "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both.",
+        "special": ["Film drama", "Pemenang Oscar"]
+    },
+    {
+        "title": "Asteroid City",
+        "year": 2023,
+        "genres": ["Comedy", "Drama", "Romance"],
+        "rating": 6.6,
+        "plot": "Following a writer on his world-famous fictional play about a grieving father who travels with his tech-obsessed family to small rural Asteroid City to compete in a junior stargazing event.",
+        "special": ["Film komedi", "Film Wes Anderson"]
+    },
+    {
+        "title": "Evil Dead Rise",
+        "year": 2023,
+        "genres": ["Horror", "Thriller"],
+        "rating": 6.5,
+        "plot": "A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons.",
+        "special": ["Film horor", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Blue Beetle",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "rating": 6.7,
+        "plot": "An alien scarab chooses college graduate Jaime Reyes to be its symbiotic host, bestowing the teenager with a suit of armor that's capable of extraordinary powers.",
+        "special": ["Film superhero", "Film DC"]
+    },
+    {
+        "title": "The Nun II",
+        "year": 2023,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "rating": 5.7,
+        "plot": "1956 – France. A priest is murdered. An evil is spreading. The sequel to the worldwide smash hit follows Sister Irene as she once again comes face-to-face with Valak, the demon nun.",
+        "special": ["Film horor", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Wish Dragon",
+        "year": 2021,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 7.2,
+        "plot": "Determined teen Din is longing to reconnect with his childhood best friend when he meets a wish-granting dragon who shows him the magic of possibilities.",
+        "special": ["Film animasi", "Film keluarga"]
+    },
+    {
+        "title": "The Little Mermaid",
+        "year": 2023,
+        "genres": ["Adventure", "Family", "Fantasy"],
+        "rating": 7.0,
+        "plot": "A young mermaid makes a deal with a sea witch to trade her beautiful voice for human legs so she can discover the world above water and impress a prince.",
+        "special": ["Film musikal", "Film adaptasi live-action"]
+    },
+    {
+        "title": "Minari",
+        "year": 2020,
+        "genres": ["Drama"],
+        "rating": 7.5,
+        "plot": "A Korean American family moves to an Arkansas farm in search of their own American Dream.",
+        "special": ["Pemenang Oscar", "Film keluarga"]
+    },
+    {
+        "title": "Sound of Metal",
+        "year": 2019,
+        "genres": ["Drama", "Music"],
+        "rating": 7.8,
+        "plot": "A heavy-metal drummer's life is thrown into freefall when he begins to lose his hearing.",
+        "special": ["Pemenang Oscar", "Film musik"]
+    },
+    {
+        "title": "Promising Young Woman",
+        "year": 2020,
+        "genres": ["Crime", "Drama", "Thriller"],
+        "rating": 7.5,
+        "plot": "A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who crossed her path.",
+        "special": ["Pemenang Oscar", "Film thriller"]
+    },
+    {
+        "title": "The Father",
+        "year": 2020,
+        "genres": ["Drama", "Mystery"],
+        "rating": 8.2,
+        "plot": "A man refuses all assistance from his daughter as he ages. As he tries to make sense of his changing circumstances, he begins to doubt his loved ones.",
+        "special": ["Pemenang Oscar", "Film keluarga"]
+    },
+    {
+        "title": "Nomadland",
+        "year": 2020,
+        "genres": ["Drama"],
+        "rating": 7.3,
+        "plot": "A woman in her sixties who, after losing everything in the Great Recession, embarks on a journey through the American West, living as a van-dwelling modern-day nomad.",
+        "special": ["Pemenang Oscar", "Film petualangan"]
+    },
+    {
+        "title": "The Mitchells vs. the Machines",
+        "year": 2021,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 7.6,
+        "plot": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse.",
+        "special": ["Film animasi", "Film keluarga"]
+    },
+    {
+        "title": "Raya and the Last Dragon",
+        "year": 2021,
+        "genres": ["Animation", "Action", "Adventure"],
+        "rating": 7.3,
+        "plot": "In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.",
+        "special": ["Film animasi", "Film petualangan"]
+    },
+    {
+        "title": "Judas and the Black Messiah",
+        "year": 2021,
+        "genres": ["Biography", "Drama", "History"],
+        "rating": 7.4,
+        "plot": "Offered a plea deal by the FBI, William O'Neal infiltrates the Illinois chapter of the Black Panther Party to gather intelligence on Chairman Fred Hampton.",
+        "special": ["Pemenang Oscar", "Film sejarah"]
+    },
+    {
+        "title": "The French Dispatch",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Romance"],
+        "rating": 7.1,
+        "plot": "A love letter to journalists set in an outpost of an American newspaper in a fictional twentieth-century French city.",
+        "special": ["Film komedi", "Film Wes Anderson"]
+    },
+    {
+        "title": "Don't Look Up",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Sci-Fi"],
+        "rating": 7.2,
+        "plot": "Two low-level astronomers must go on a giant media tour to warn mankind of an approaching comet that will destroy planet Earth.",
+        "special": ["Film satir", "Film bencana"]
+    },
+    {
+        "title": "CODA",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Music"],
+        "rating": 8.0,
+        "plot": "As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf family. When the family's fishing business is threatened, Ruby finds herself torn between pursuing her love of music and her fear of abandoning her parents.",
+        "special": ["Pemenang Oscar", "Film keluarga"]
+    },
+    {
+        "title": "The Lost Daughter",
+        "year": 2021,
+        "genres": ["Drama", "Mystery"],
+        "rating": 6.7,
+        "plot": "A woman's beach vacation takes a dark turn when she begins to confront the troubles of her past.",
+        "special": ["Film psikologis", "Film adaptasi novel"]
+    },
+    {
+        "title": "The Lost City",
+        "year": 2022,
+        "genres": ["Action", "Adventure", "Comedy"],
+        "rating": 6.1,
+        "plot": "A reclusive romance novelist on a book tour with her cover model gets swept up in a kidnapping attempt that lands them both in a cutthroat jungle adventure.",
+        "special": ["Film petualangan", "Film komedi"]
+    },
+    {
+        "title": "The Adam Project",
+        "year": 2022,
+        "genres": ["Action", "Adventure", "Comedy"],
+        "rating": 6.7,
+        "plot": "After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self for a mission to save the future.",
+        "special": ["Film time travel", "Film keluarga"]
+    },
+    {
+        "title": "Turning Red",
+        "year": 2022,
+        "genres": ["Animation", "Adventure", "Comedy"],
+        "rating": 7.0,
+        "plot": "A thirteen-year-old girl named Meilin turns into a giant red panda whenever she gets too excited.",
+        "special": ["Film animasi", "Film keluarga"]
+    },
+    {
+        "title": "The Northman",
+        "year": 2022,
+        "genres": ["Action", "Adventure", "Drama"],
+        "rating": 7.0,
+        "plot": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother.",
+        "special": ["Film sejarah", "Film balas dendam"]
+    },
+    {
+        "title": "Lightyear",
+        "year": 2022,
+        "genres": ["Animation", "Action", "Adventure"],
+        "rating": 6.1,
+        "plot": "While spending years attempting to return home, marooned Space Ranger Buzz Lightyear encounters an army of ruthless robots commanded by Zurg.",
+        "special": ["Film animasi", "Film luar angkasa"]
+    },
+    {
+        "title": "Scream VI",
+        "year": 2023,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "rating": 6.6,
+        "plot": "In the next installment, the survivors of the Ghostface killings leave Woodsboro behind and start a fresh chapter in New York City.",
+        "special": ["Film horor", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "65",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Drama"],
+        "rating": 5.4,
+        "plot": "An astronaut crash lands on a mysterious planet only to discover he's not alone.",
+        "special": ["Film sci-fi", "Film survival"]
+    },
+    {
+        "title": "Missing",
+        "year": 2023,
+        "genres": ["Drama", "Mystery", "Thriller"],
+        "rating": 7.1,
+        "plot": "After her mother goes missing, a young woman tries to find her from thousands of miles away using technology.",
+        "special": ["Film misteri", "Film teknologi"]
+    },
+    {
+        "title": "Air",
+        "year": 2023,
+        "genres": ["Drama", "Sport"],
+        "rating": 7.4,
+        "plot": "Follows the history of shoe salesman Sonny Vaccaro, and how he led Nike in its pursuit of the greatest athlete in the history of basketball: Michael Jordan.",
+        "special": ["Film olahraga", "Film biografi"]
+    },
+    {
+        "title": "The Flash",
+        "year": 2023,
+        "genres": ["Action", "Adventure", "Fantasy"],
+        "rating": 6.8,
+        "plot": "Barry Allen uses his super speed to change the past, but his attempt to save his family creates a world without superheroes.",
+        "special": ["Film superhero", "Film dengan prekuel atau sekuel"]
+    },
+    {
+        "title": "Haunted Mansion",
+        "year": 2023,
+        "genres": ["Comedy", "Drama", "Family"],
+        "rating": 6.1,
+        "plot": "A woman and her son enlist a motley crew of so-called spiritual experts to help rid their home of supernatural squatters.",
+        "special": ["Film keluarga", "Film komedi"]
+    },
+    {
+        "title": "The Covenant",
+        "year": 2023,
+        "genres": ["Action", "Thriller", "War"],
+        "rating": 7.5,
+        "plot": "During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.",
+        "special": ["Film perang", "Film persahabatan"]
+    },
+    {
+        "title": "The Killer",
+        "year": 2023,
+        "genres": ["Action", "Crime", "Thriller"],
+        "rating": 6.8,
+        "plot": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+        "special": ["Film aksi", "Film kriminal"]
+    },
+    {
+        "title": "Nyad",
+        "year": 2023,
+        "genres": ["Biography", "Drama", "Sport"],
+        "rating": 7.0,
+        "plot": "The remarkable true story of athlete Diana Nyad, who, at the age of 60, became the first person to complete a 110-mile swim from Cuba to Florida.",
+        "special": ["Film olahraga", "Film biografi"]
+    },
+    {
+        "title": "Leave the World Behind",
+        "year": 2023,
+        "genres": ["Drama", "Mystery", "Thriller"],
+        "rating": 6.6,
+        "plot": "A family's vacation is upended when two strangers arrive at night, seeking refuge from a cyberattack that grows more terrifying by the minute.",
+        "special": ["Film misteri", "Film keluarga"]
+    },
+    {
+        "title": "The Power of the Dog",
+        "year": 2021,
+        "genres": ["Drama", "Romance", "Western"],
+        "rating": 6.9,
+        "plot": "Charismatic rancher Phil Burbank inspires fear and awe in those around him. When his brother brings home a new wife and her son, Phil torments them until he finds himself exposed to the possibility of love.",
+        "special": ["Pemenang Oscar", "Film western"]
+    },
+    {
+        "title": "The Green Knight",
+        "year": 2021,
+        "genres": ["Adventure", "Drama", "Fantasy"],
+        "rating": 6.7,
+        "plot": "A fantasy re-telling of the medieval story of Sir Gawain and the Green Knight.",
+        "special": ["Film fantasi", "Film petualangan"]
+    },
+    {
+        "title": "The Tragedy of Macbeth",
+        "year": 2021,
+        "genres": ["Drama", "Thriller", "War"],
+        "rating": 7.1,
+        "plot": "A Scottish lord becomes convinced by a trio of witches that he will become the next King of Scotland.",
+        "special": ["Film adaptasi Shakespeare", "Film hitam putih"]
+    },
+    {
+        "title": "The Worst Person in the World",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Romance"],
+        "rating": 7.8,
+        "plot": "Chronicles four years in the life of Julie, a young woman who navigates the troubled waters of her love life and struggles to find her career path.",
+        "special": ["Film festival", "Film Norwegia"]
+    },
+    {
+        "title": "Licorice Pizza",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Romance"],
+        "rating": 7.1,
+        "plot": "The story of Alana Kane and Gary Valentine growing up, running around and falling in love in the San Fernando Valley, 1973.",
+        "special": ["Film coming-of-age", "Film festival"]
+    },
+    {
+        "title": "Nope",
+        "year": 2022,
+        "genres": ["Horror", "Mystery", "Sci-Fi"],
+        "rating": 6.8,
+        "plot": "The residents of a lonely gulch in inland California bear witness to an uncanny and chilling discovery.",
+        "special": ["Film horor", "Film sci-fi"]
+    },
+    {
+        "title": "The Fabelmans",
+        "year": 2022,
+        "genres": ["Drama"],
+        "rating": 7.6,
+        "plot": "Growing up in post-World War II era Arizona, young Sammy Fabelman discovers a shattering family secret and explores how the power of movies helps us see the truth about each other and ourselves.",
+        "special": ["Film keluarga", "Film biografi"]
+    },
+    {
+        "title": "Babylon",
+        "year": 2022,
+        "genres": ["Comedy", "Drama", "History"],
+        "rating": 7.2,
+        "plot": "A tale of outsized ambition and outrageous excess, tracing the rise and fall of multiple characters during an era of unbridled decadence and depravity in early Hollywood.",
+        "special": ["Film sejarah", "Film musikal"]
+    },
+    {
+        "title": "The Woman King",
+        "year": 2022,
+        "genres": ["Action", "Drama", "History"],
+        "rating": 6.9,
+        "plot": "A historical epic inspired by true events that took place in The Kingdom of Dahomey, one of the most powerful states of Africa in the 18th and 19th centuries.",
+        "special": ["Film sejarah", "Film dengan kekuatan perempuan"]
+    },
+    {
+        "title": "The Sea Beast",
+        "year": 2022,
+        "genres": ["Animation", "Adventure", "Family"],
+        "rating": 7.0,
+        "plot": "When a young girl stows away on the ship of a legendary sea monster hunter, they launch an epic journey into uncharted waters.",
+        "special": ["Film animasi", "Film petualangan"]
+    },
+    {
+        "title": "The Black Phone",
+        "year": 2021,
+        "genres": ["Horror", "Thriller"],
+        "rating": 7.0,
+        "plot": "After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer's previous victims.",
+        "special": ["Film horor", "Film misteri"]
+    },
+    {
+        "title": "The Last Duel",
+        "year": 2021,
+        "genres": ["Action", "Drama", "History"],
+        "rating": 7.4,
+        "plot": "King Charles VI declares that Knight Jean de Carrouges settle his dispute with his squire by challenging him to a duel.",
+        "special": ["Film sejarah", "Film epik"]
+    },
+    {
+        "title": "All Quiet on the Western Front",
+        "year": 2022,
+        "genres": ["Action", "Drama", "War"],
+        "rating": 7.8,
+        "plot": "A young German soldier's terrifying experiences and distress on the western front during World War I.",
+        "special": ["Pemenang Oscar", "Film perang"]
+    },
+    {
+        "title": "Triangle of Sadness",
+        "year": 2022,
+        "genres": ["Comedy", "Drama"],
+        "rating": 7.3,
+        "plot": "A cruise for the super-rich sinks thus leaving survivors, including a fashion model celebrity couple, trapped on an island.",
+        "special": ["Pemenang Palme d'Or", "Film satir"]
+    },
+    {
+        "title": "Aftersun",
+        "year": 2022,
+        "genres": ["Drama"],
+        "rating": 7.7,
+        "plot": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier.",
+        "special": ["Film keluarga", "Film festival"]
+    },
+    {
+        "title": "The Menu",
+        "year": 2022,
+        "genres": ["Comedy", "Horror", "Thriller"],
+        "rating": 7.2,
+        "plot": "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
+        "special": ["Film misteri", "Film kuliner"]
+    },
+    {
+        "title": "The Lost Daughter",
+        "year": 2021,
+        "genres": ["Drama", "Mystery"],
+        "rating": 6.7,
+        "plot": "A woman's beach vacation takes a dark turn when she begins to confront the troubles of her past.",
+        "special": ["Film psikologis", "Film adaptasi novel"]
+    },  
+    {
+        "title": "CODA",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Music"],
+        "rating": 8.0,
+        "plot": "As a CODA (Child of Deaf Adults) Ruby is the only hearing person in her deaf family. When the family's fishing business is threatened, Ruby finds herself torn between pursuing her love of music and her fear of abandoning her parents.",
+        "special": ["Pemenang Oscar", "Film keluarga"]
+    },
+    {
+        "title": "Don't Look Up",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Sci-Fi"],
+        "rating": 7.2,
+        "plot": "Two low-level astronomers must go on a giant media tour to warn mankind of an approaching comet that will destroy planet Earth.",
+        "special": ["Film satir", "Film bencana"]
+    },
+    {
+        "title": "The French Dispatch",
+        "year": 2021,
+        "genres": ["Comedy", "Drama", "Romance"],
+        "rating": 7.1,
+        "plot": "A love letter to journalists set in an outpost of an American newspaper in a fictional twentieth-century French city.",
+        "special": ["Film komedi", "Film Wes Anderson"]
     }
 ]

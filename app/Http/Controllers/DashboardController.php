@@ -72,5 +72,23 @@ class DashboardController extends Controller
         return view('movie-detail', compact('movie'));
     }
 
+    public function charts()
+    {
+        // Hitung jumlah film per genre
+        $genreCounts = \App\Models\Genre::withCount('movies')->get()->pluck('movies_count', 'name');
+
+        // Hitung jumlah film per rating
+        $ratingCounts = \App\Models\Movie::select('rating')
+            ->whereNotNull('rating')
+            ->groupBy('rating')
+            ->selectRaw('rating, COUNT(*) as total')
+            ->pluck('total', 'rating');
+
+        return view('dashboard-charts', [
+            'genreCounts' => $genreCounts,
+            'ratingCounts' => $ratingCounts,
+        ]);
+    }
+
     // Menghapus method filter() karena sudah ada di GenreController
 }

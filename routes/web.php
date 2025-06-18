@@ -40,3 +40,6 @@ Route::get('/bookmarks/check/{movieId}', [App\Http\Controllers\BookmarkControlle
 
 // Fitur Movie Search
 Route::get('/movie/{slug}', [App\Http\Controllers\DashboardController::class, 'show'])->name('movie.detail');
+
+// Additional route for dashboard charts
+Route::get('/dashboard/charts', [App\Http\Controllers\DashboardController::class, 'charts'])->name('dashboard.charts');
