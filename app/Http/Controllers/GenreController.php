@@ -7,10 +7,16 @@ use Illuminate\Http\Request;
 
 class GenreController extends Controller
 {
+<<<<<<< Updated upstream
     public function topGenres()
     {
         $json = File::get(public_path('genres.json'));
         $genres = json_decode($json);
+=======
+    public function topGenresPage()
+    {
+        $genres = Genre::pluck('name')->toArray();
+>>>>>>> Stashed changes
 
         // Jika hanya ingin menampilkan semua genre dari JSON
         return view('top-genres', ['topGenres' => $genres]);
@@ -62,6 +68,7 @@ class GenreController extends Controller
         ]);
     }
 
+<<<<<<< Updated upstream
     public function apiMoviesByGenre($genre)
     {
         $json = file_get_contents(public_path('movies.json'));
@@ -70,6 +77,16 @@ class GenreController extends Controller
         $filtered = array_filter($movies, function ($movie) use ($genre) {
             return isset($movie->genres) && in_array($genre, $movie->genres);
         });
+=======
+    public function filterTopGenres(Request $request)
+    {
+        $selectedGenre = $request->genre;
+ 
+        $genres = Genre::pluck('name')->toArray();
+        if (empty($genres)) {
+            $genres = json_decode(file_get_contents(public_path('genres.json')), true);
+        }
+>>>>>>> Stashed changes
 
         // Urutkan berdasarkan rating tertinggi ke terendah
         usort($filtered, function ($a, $b) {

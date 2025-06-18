@@ -9,8 +9,42 @@ class DashboardController extends Controller
 {
     public function index()
     {
+<<<<<<< Updated upstream
         $json = file_get_contents(public_path('genres.json'));
         $genres = json_decode($json);
+=======
+        $movies = [];
+        $query = $request->input('q');
+
+        $json = file_get_contents(public_path('movies.json'));
+        $allMovies = json_decode($json, true);
+
+        $genresJson = file_get_contents(public_path('genres.json'));
+        $genres = json_decode($genresJson, true);
+
+        if ($query) {
+            $query = strtolower($query);
+
+            $titleMovies = array_filter($allMovies, function ($movie) use ($query) {
+                return isset($movie['title']) && str_starts_with(strtolower($movie['title']), $query);
+            });
+
+            if (count($titleMovies) > 0) {
+                $movies = $titleMovies;
+            } else {
+                $movies = array_filter($allMovies, function ($movie) use ($query) {
+                    $yearMatch = isset($movie['year']) && str_starts_with((string) $movie['year'], $query);
+                    $genresMatch = isset($movie['genres']) && collect($movie['genres'])->filter(function ($g) use ($query) {
+                        return str_starts_with(strtolower($g), $query);
+                    })->isNotEmpty();
+                    $ratingMatch = isset($movie['rating']) && str_starts_with(strtolower($movie['rating']), $query);
+
+                    return $yearMatch || $genresMatch || $ratingMatch;
+                });
+            }
+        }
+
+>>>>>>> Stashed changes
         return view('dashboard', [
             'genres' => $genres,
             'selectedGenre' => null,
@@ -24,8 +58,16 @@ class DashboardController extends Controller
         $json = file_get_contents(public_path('genres.json'));
         $genres = json_decode($json);
 
+<<<<<<< Updated upstream
         $moviesJson = file_get_contents(public_path('movies.json'));
         $movies = json_decode($moviesJson);
+=======
+        $movie = collect($allMovies)->first(function ($movie) use ($slug) {
+            $titleSlug = strtolower(str_replace([' ', ':', ',', '.', '!', '?', "'", '"'], ['-', '', '', '', '', '', '', ''], $movie['title']));
+            $titleSlug = preg_replace('/-+/', '-', $titleSlug); 
+            return $titleSlug === $slug;
+        });
+>>>>>>> Stashed changes
 
         $filteredMovies = [];
         if ($selectedGenre) {
@@ -48,4 +90,8 @@ class DashboardController extends Controller
             'filteredMovies' => $filteredMovies
         ]);
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
